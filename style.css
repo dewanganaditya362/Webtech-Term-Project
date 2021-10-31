@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(184, 250, 244);
+    font-family: 'Roboto', sans-serif;
+
+    
+    padding: 0;
+    margin:0;
+}
+
+.header{
+    background-color: rgb(0, 0, 3);
+    color: rgb(146, 226, 236);
+    height: 250px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .first{
+    margin-right: 20px;
+}
+
+.header .second{
+    font-size: 35px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(12, 4, 54);
+    height:50px;
+    color: white
+}
+
+.navBar a{
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+.navBar a:hover{
+    background-color: white;
+    color: rgb(3, 3, 44);
+}
+
+.services{
+    padding:35px;
+    background-color: rgb(189, 227, 245);
+    color: rgb(10, 10, 10);
+}
+
+.servicesTitle{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.pictures{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pictures img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content{
+    padding-top:50px;
+    padding-bottom:30px;
+    padding-left:300px;
+    padding-right: 300px;
+    font-size: 20px;
+}
+
+.endorsement{
+    background-color: rgb(184, 250, 244);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+    height:50px;
+    font-size: 20px;
+    border:none;
+    border-bottom: rgb(197, 197, 197) 1px solid;
+}
+
+
+.active, .endorsement:hover{
+    background-color: rgb(123, 253, 242);
+}
+
+.endorsement:after {
+    content: '\02795'; 
+    outline:none;
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+  }
+
+.panel{
+    font-style: italic ;
+    padding: 0 20px;
+    display:none;
+    overflow:hidden;
+}
+
+.footer{
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    padding: 20px;
+    line-height: 1.15;
+}

@@ -1,0 +1,15 @@
+.team-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memberInfo {
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+}
+
+.teamMember {
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,0 +1,125 @@
+.sample{
+
+    background-color: rgb(184, 250, 244);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+    height:50px;
+    font-size: 20px;
+    border:none;
+    border-bottom: rgb(197, 197, 197) 1px solid;
+}
+
+active, .sample:hover{
+    background-color: rgb(123, 253, 242);
+}
+
+.sample:after {
+    content: '\02795'; 
+    outline:none;
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+  }
+
+
+  .text{
+    font-style: italic ;
+    padding: 0 20px;
+    display:none;
+    overflow:hidden;
+}
+
+.feedback{
+    background-color: #0e0349; 
+    border: none;
+    width: 100px;
+    height:50px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    display:inline;
+ }
+ 
+  .feedback:hover {
+    background-color: #000005; /* Green */
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    
+  }
+
+  #rating1, #rating2, #rating3{
+
+    font-weight: bold;
+  }
+
+  #area1, #area2, #area3{
+      display: none;
+  }
+
+  textarea{
+        width: 86%;
+        height: 8em;
+        padding: 1em 1em;
+        box-sizing: border-box;
+        border: 0.2em solid rgb(0, 0, 0);
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        margin-bottom: 1em;
+  }
+  .submit{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+ }
+
+ .submit:hover {
+    background-color: #006105; /* Green */
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    
+  }
+
+
+
+@media screen and (max-width: 500px)
+{
+.sample{
+   
+    padding: 30 px;
+    width: 100%;
+    height:40px;
+    font-size: 13px;
+    
+}
+
+.text{
+    font-style: italic ;
+    padding: 0 10px;
+    display:none;
+    overflow:hidden;
+}
+
+}

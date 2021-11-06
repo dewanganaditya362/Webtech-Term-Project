@@ -32,6 +32,31 @@
       <a href="Contact.html"> Contact Us </a>
     </div>
 
+<!--POP UP BOX THINGS-->
+<div id='popup' class='active'>
+  <div class='popcontent'>
+      <h2>Join our newsletter</h2>
+       <p> Catch all our latest updates, new services, new hirings, etc. before anyone else. Join our mailing list today!
+       </p>
+       <center>
+       <div class='emailbox'>
+           <input type="email" placeholder="Enter email">
+       </div>
+       <div class="emailbox">
+           <input type='submit' onclick="popupToggle();" value='sign up'>
+       </div>
+      </center>
+  </div>
+  <a class="closebutt" onclick="popupToggle();">❌</a>
+</div>
+<script>
+  function popupToggle(){
+      const popup=document.getElementById('popup');
+      popup.classList.toggle('active');
+  }
+</script></div>
+<!--POP UP THINGS FIN-->
+
     <p>
       <center>
         Please leave your details and queries in the form below! Our executives

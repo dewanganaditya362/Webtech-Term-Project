@@ -36,12 +36,12 @@ input[type=text]:focus {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
     transition-duration: 0.4s;
  }
  
@@ -52,3 +52,98 @@ input[type=text]:focus {
     transform: translateY(-0.25em);
     
   }
+  .btn{
+      position: relative;
+      padding: 1.5em 1em;
+     background: #fff;
+     display: inline-block;
+     text-decoration: none;
+     color: aqua;
+     cursor: pointer;
+     font-weight: 500;
+     letter-spacing: .2em;
+     text-transform: uppercase;
+     transition: 0.5s;
+     align-items: center;
+     margin-top: 1em;
+     margin-left: 45%;
+  }
+  .btn:hover{
+      letter-spacing: .4em;
+      transform-origin: center;
+  }
+  #popup
+  {
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1000;
+      background-color: azure;
+      width: 12em;
+      padding: 1em 1em 1em;
+      box-shadow: 0 1.5em 30 rgba(0,0,0,0.08);
+      transition: 0.5s;
+      visibility: hidden;
+  }
+#popup.active{
+    visibility: visible;
+    top: 50%;
+}
+.active:after {
+    visibility: hidden;
+}
+  #popup .popcontent
+  {
+   position:relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+#popup .popcontent h2
+{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    margin-left: -20%;
+    text-align: left;
+    text-decoration: underline;
+}
+#popup .popcontent p{
+ text-align: left;
+ font-size: 1em;
+ color: #333;   
+}
+#popup .popcontent .emailbox{
+position: relative;
+width: 100%;
+margin-top: 2em;
+border-color: rgba(12, 0, 0, 0.19);
+border-width: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#popup .popcontent .emailbox input{
+    width: 100%;
+    border: 0.1em solid rgb(0, 0, 0);
+    /*padding: 15px;*/
+    outline: none;
+    font-size: 1em;
+    margin-top: -10%;
+    }
+ #popup .popcontent .emailbox input[type='submit']{
+        max-width: 15em;
+        background:green;
+        color: #fff;
+        border: 1em;
+        margin-top: -10%;
+         }
+.closebutt{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+}

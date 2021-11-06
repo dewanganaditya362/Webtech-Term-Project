@@ -13,3 +13,19 @@
   padding: 10px;
   margin: 10px;
 }
+
+@media screen and (max-width: 1100px) {
+  .team-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .memberInfo {
+    height: 300px;
+    width: 300px;
+  }
+  .teamMember {
+    padding: 20px;
+    margin: 20px;
+  }
+}

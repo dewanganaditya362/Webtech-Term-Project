@@ -1,4 +1,7 @@
  
+/*Script file for accordion buttons of homepage
+Contributed by Shreya Tiwari (19115081) */
+
 var arr = document.getElementsByClassName("endorsement");
 var i;
 

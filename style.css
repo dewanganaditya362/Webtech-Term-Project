@@ -1,123 +1,135 @@
-body{
+/* CSS file for header, footer and home page
+Contributed by: Shreya Tiwari (19115081) */
+
+
+body {
     background-color: rgb(184, 250, 244);
     font-family: 'Roboto', sans-serif;
-
-    
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-.header{
+/*CSS for header*/
+.header {
     background-color: rgb(0, 0, 3);
     color: rgb(146, 226, 236);
     height: 250px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header .first{
+.header .first {
     margin-right: 20px;
 }
 
-.header .second{
+.header .second {
     font-size: 35px;
 }
 
-.navBar{
+/*CSS for navigation bar */
+.navBar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgb(12, 4, 54);
-    height:50px;
+    height: 50px;
     color: white
 }
 
-.navBar a{
-   color: white;
-   text-decoration: none;
-   font-size: 16px;
+.navBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.navBar a:hover{
+.navBar a:hover {
     background-color: white;
     color: rgb(3, 3, 44);
 }
 
-.services{
-    padding:35px;
+/*CSS for Services part of page */
+.services {
+    padding: 35px;
     background-color: rgb(189, 227, 245);
     color: rgb(10, 10, 10);
 }
 
-.servicesTitle{
+.servicesTitle {
     color: black;
     font-weight: bold;
     font-size: 18px;
 }
-.pictures{
+
+.pictures {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.pictures img{
-    width:150px;
-    height:150px;
+.pictures img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
-.text{
+
+.text {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.content{
-    padding-top:50px;
-    padding-bottom:30px;
-    padding-left:300px;
+
+/*CSS for content of website*/
+.content {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 300px;
     padding-right: 300px;
     font-size: 20px;
 }
 
-.endorsement{
+/*CSS for accordion buttons*/
+.endorsement {
     background-color: rgb(184, 250, 244);
     cursor: pointer;
     padding: 20px;
     width: 100%;
     text-align: left;
     transition: 0.5s;
-    height:50px;
+    height: 50px;
     font-size: 20px;
-    border:none;
+    border: none;
     border-bottom: rgb(197, 197, 197) 1px solid;
 }
 
 
-.active, .endorsement:hover{
+.active,
+.endorsement:hover {
     background-color: rgb(123, 253, 242);
 }
 
 .endorsement:after {
-    content: '\02795'; 
-    outline:none;
+    content: '\02795';
+    outline: none;
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; 
-  }
-
-.panel{
-    font-style: italic ;
-    padding: 0 20px;
-    display:none;
-    overflow:hidden;
 }
 
-.footer{
+.active:after {
+    content: "\2796";
+}
+
+.panel {
+    font-style: italic;
+    padding: 0 20px;
+    display: none;
+    overflow: hidden;
+}
+
+/*CSS for footer*/
+.footer {
     color: white;
     background-color: black;
     font-size: 10px;
@@ -125,89 +137,87 @@ body{
     line-height: 1.15;
 }
 
-@media screen and (max-width: 500px)
-{
-    .header .second{
+/*responsive webpage media queries*/
+@media screen and (max-width: 500px) {
+    .header .second {
         font-size: 15px;
     }
 
-    .first img{
-        height:50px;
+    .first img {
+        height: 50px;
         width: 50px;
     }
 
-    
-.header{
-    
-    height: 120px;
-    
-}
+
+    .header {
+
+        height: 120px;
+
+    }
 
 
 
-.navBar{
-   
-    height:60px;
-  
-}
+    .navBar {
 
-.navBar a{
-  
-   font-size: 10px
-}
+        height: 60px;
 
+    }
 
+    .navBar a {
 
-.pictures img{
-    width:80px;
-    height:80px;
-    border-radius: 50%;
-}
-
-.services{
-    padding:15px;
-    
-}
-
-.servicesTitle{
-   
-    font-size: 10px;
-}
+        font-size: 10px
+    }
 
 
-.content{
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:30px;
-    padding-right: 30px;
-    font-size: 15px;
-}
 
-.endorsement{
-   
-    padding: 30 px;
-    width: 100%;
-    height:40px;
-    font-size: 13px;
-    
-}
+    .pictures img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .services {
+        padding: 15px;
+
+    }
+
+    .servicesTitle {
+
+        font-size: 10px;
+    }
 
 
-.panel{
-    font-style: italic ;
-    padding: 0 10px;
-    display:none;
-    overflow:hidden;
-}
+    .content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px;
+    }
 
-.footer{
-    position: fixed;
-    left:0;
-    bottom:0;
-    width: 100%;
-    font-size: 10px;
-    padding: 15px;
-    line-height: 1.15;
-}
+    .endorsement {
+
+        padding: 30 px;
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+
+    }
+
+
+    .panel {
+        font-style: italic;
+        padding: 0 10px;
+        display: none;
+        overflow: hidden;
+    }
+
+    .footer {
+
+        width: 100%;
+        font-size: 10px;
+        padding: 15px;
+        line-height: 1.15;
+    }
 
 }

@@ -1,0 +1,19 @@
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.heading {
+  color: black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
+.para {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}

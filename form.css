@@ -44,7 +44,21 @@ input[type=text]:focus {
     /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
     transition-duration: 0.4s;
  }
- 
+ /*@media screen and (min-width: 700px) {
+ .footer {
+  color: white;
+  background-color: black;
+  font-size: 10px;
+  display: block;
+
+  width: auto;
+  /*padding: 0% 40%;*
+  line-height: 1.15;
+  text-align: center;
+  position:fixed;
+  bottom:0;
+}*/
+
   .button:hover {
     background-color: #006105; /* Green */
     color: white;

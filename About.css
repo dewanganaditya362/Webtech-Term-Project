@@ -15,5 +15,7 @@
 .para {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  text-align: justify;
 }
